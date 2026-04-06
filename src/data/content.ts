@@ -125,7 +125,7 @@ export const experience: ExperienceItem[] = [
     ],
   },
   {
-    company: "IDF Taxi",
+    company: "Ile de France Taxi",
     period: "Ongoing",
     title: "Mobile application · Live field testing",
     points: [
