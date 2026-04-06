@@ -9,9 +9,7 @@ export function Footer() {
           <p className="mt-1 text-sm text-muted">{profile.title}</p>
         </div>
         <div className="flex flex-wrap items-center justify-center gap-4 text-sm">
-          <a href={`mailto:${profile.email}`} className="text-muted-soft transition hover:text-accent">
-            {profile.email}
-          </a>
+          <span className="text-muted-soft select-all">{profile.email.trim()}</span>
           <span className="hidden text-white/20 sm:inline">·</span>
           <a
             href={profile.links.linkedin}

@@ -89,7 +89,7 @@ export const projects: Project[] = [
     link: "https://github.com/youssefhajjaoui/lem-in",
   },
   {
-    name: "IDF Taxi",
+    name: "Ile de France Taxi",
     role: "Mobile · In production testing",
     description:
       "Taxi booking and ops app in active field use—real riders, iterative delivery from client feedback and usage.",
@@ -162,6 +162,6 @@ export const recommendations: Recommendation[] = [
       "It’s rare to find a team that combines strong technical skills with such professionalism and human qualities. I would confidently recommend them to any company looking for a trustworthy and motivated tech partner.",
     ],
     name: "Mohammed",
-    role: "CEO · IDF Taxi",
+    role: "CEO · Ile de France Taxi",
   },
 ];

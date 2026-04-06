@@ -35,13 +35,7 @@ function IconGitHub() {
   );
 }
 
-const rows = [
-  {
-    label: "Email",
-    href: `mailto:${profile.email}`,
-    sub: profile.email,
-    icon: IconMail,
-  },
+const linkRows = [
   {
     label: "LinkedIn",
     href: profile.links.linkedin,
@@ -114,14 +108,27 @@ export function ContactModal({ isOpen, onClose, anchorPosition }: Props) {
           </button>
         </div>
         <ul className="divide-y divide-white/10 p-2">
-          {rows.map((row) => {
+          <li>
+            <div className="flex items-center gap-4 rounded-xl px-4 py-4">
+              <span className="flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 bg-white/[0.03] text-accent">
+                <IconMail />
+              </span>
+              <span className="min-w-0 flex-1">
+                <span className="block font-medium text-white">Email</span>
+                <span className="mt-0.5 block truncate font-mono text-xs text-muted-soft select-all">
+                  {profile.email.trim()}
+                </span>
+              </span>
+            </div>
+          </li>
+          {linkRows.map((row) => {
             const Icon = row.icon;
             return (
               <li key={row.label}>
                 <a
                   href={row.href}
-                  target={row.label === "Email" ? undefined : "_blank"}
-                  rel={row.label === "Email" ? undefined : "noreferrer"}
+                  target="_blank"
+                  rel="noreferrer"
                   className="flex items-center gap-4 rounded-xl px-4 py-4 transition hover:bg-white/[0.04]"
                   onClick={onClose}
                 >
