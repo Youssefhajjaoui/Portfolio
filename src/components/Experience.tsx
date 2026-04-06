@@ -13,7 +13,7 @@ export function Experience() {
           {experience.map((job) => (
             <li key={job.company + job.period} className="relative pb-12 last:pb-0">
               <span
-                className="absolute -left-[5px] top-1.5 h-2.5 w-2.5 rounded-full border-2 border-surface-950 bg-accent shadow-[0_0_12px_rgba(34,211,238,0.6)]"
+                className="absolute top-1.5 h-2.5 w-2.5 rounded-full border-2 border-surface-950 bg-accent shadow-[0_0_12px_rgba(34,211,238,0.6)] -left-[calc(2rem+5px)] sm:-left-[calc(2.5rem+5px)]"
                 aria-hidden
               />
               <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
