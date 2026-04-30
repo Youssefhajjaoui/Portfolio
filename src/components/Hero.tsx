@@ -44,6 +44,16 @@ export function Hero() {
           >
             View projects
           </a>
+          {profile.resumeUrl ? (
+            <a
+              href={profile.resumeUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center rounded-xl border border-white/15 bg-white/[0.03] px-6 py-3 text-sm font-medium text-white transition hover:border-white/25 hover:bg-white/[0.06]"
+            >
+              Résumé / CV
+            </a>
+          ) : null}
           <a
             href={profile.links.github}
             target="_blank"

@@ -7,6 +7,8 @@ export const profile = {
     "I build reliable backends, polished web apps, and mobile experiences — from Unix-like tooling to production taxi apps used by real riders.",
   email: "youssefhajjaoui67@gmail.com",
   location: "Available worldwide · Remote-friendly",
+  /** PDF or public link to your CV — appears in the hero when set (recruiter “one click”). */
+  resumeUrl: "",
   links: {
     github: "https://github.com/youssefhajjaoui",
     linkedin: "https://linkedin.com/in/yocef",
@@ -24,7 +26,12 @@ export type Project = {
   description: string;
   stack: string[];
   highlight: string;
+  /** GitHub repository URL. */
   link: string;
+  /** Optional deployed demo (Vercel, Pages, etc.) — separate from source. */
+  liveDemo?: string;
+  /** Problem / why this stack / what you’d do next — short “case study” line for recruiters. */
+  why?: string;
 };
 
 export const projects: Project[] = [
