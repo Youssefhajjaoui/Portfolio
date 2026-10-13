@@ -97,11 +97,12 @@ export const projects: Project[] = [
   },
   {
     name: "Ile de France Taxi",
-    role: "Mobile · In production testing",
+    role: "Mobile · Flutter · Used by real drivers",
     description:
-      "Taxi booking and ops app in active field use—real riders, iterative delivery from client feedback and usage.",
-    stack: ["Mobile", "APIs", "Production"],
-    highlight: "Shipped features tested by real users, not just demos.",
+      "TikéTaxi: a Flutter app that turns a driver’s phone into a fare calculator and receipt printer. Drivers enter distance and waiting time across the four regulated tariffs (A–D); the app computes the fare, supplements, and 10% VAT, then prints a compliant “Note de taxi” on a Bluetooth thermal printer, with driver, plate, SIRET, and CPAM details included.",
+    stack: ["Flutter", "Dart", "Bluetooth", "ESC/POS", "Android"],
+    highlight:
+      "Hardware meets mobile: pixel-perfect receipts rendered as bitmaps and sent to thermal printers over Bluetooth, used daily in the field.",
     link: "https://github.com/e-aub/tik-_taxi",
   },
 ];
@@ -134,10 +135,10 @@ export const experience: ExperienceItem[] = [
   {
     company: "Ile de France Taxi",
     period: "Ongoing",
-    title: "Mobile application · Live field testing",
+    title: "Flutter mobile app · Used by real taxi drivers",
     points: [
-      "Mobile app still actively worked on and validated by real clients in production-like conditions.",
-      "Focus on reliability, UX for riders/drivers, and iteration from real-world usage.",
+      "Built TikéTaxi, a Flutter fare calculator that prints official taxi receipts on Bluetooth thermal printers (ESC/POS).",
+      "Implemented regulated tariff logic (A–D), VAT, and driver profiles saved on the device; iterated on feedback from drivers in daily use.",
     ],
   },
 ];
